@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ssh-service
-  namespace: jenkins
+  namespace: ssh
 spec:
   type: LoadBalancer
   loadBalancerIP: 104.199.75.69
