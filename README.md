@@ -11,4 +11,4 @@ Whenever you want to add/remove keys
 
 1. Edit k8s/authorized-keys
 1. Run k8s/updateKeys.sh
-1. kubectl replace -f k82/ssh-secret.yaml
+1. kubectl replace -f k8s/ssh-secret.yaml
