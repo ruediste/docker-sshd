@@ -5,7 +5,7 @@ metadata:
   namespace: ssh
 spec:
   type: LoadBalancer
-  loadBalancerIP: 104.199.75.69
+  # loadBalancerIP: <YOUR LOAD BALANCER IP>
   selector:
     app: ssh
   ports:
