@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: master
-        image: localhost:5000/sshd
+        image: ruediste/sshd
         # command:
         #   - /usr/sbin/sshd
         #   - -De
