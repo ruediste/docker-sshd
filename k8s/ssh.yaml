@@ -13,6 +13,7 @@ spec:
       containers:
       - name: master
         image: ruediste/sshd:1.0
+        imagePullPolicy: Always
         # command:
         #   - /usr/sbin/sshd
         #   - -De
