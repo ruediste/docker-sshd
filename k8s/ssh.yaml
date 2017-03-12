@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: master
-        image: ruediste/sshd
+        image: ruediste/sshd:1.0
         # command:
         #   - /usr/sbin/sshd
         #   - -De
@@ -29,7 +29,7 @@ spec:
         volumeMounts:
         - mountPath: /root/.ssh/
           name: ssh-dir
-        - mountPath: /etc/ssh/
+        - mountPath: /etc/ssh/hostKeys/
           name: ssh-host-keys
         resources:
           limits:

@@ -5,7 +5,7 @@ Use SSH to connect to your kubernetes cluster.
 
 1. Add your public key to authorized_keys
 1. If you want a fixed public IP, set the desired loadBalancerIP in k8s/ssh-service.yaml
-1. kubectl create -f k8s/00-namespace.yaml
+1. Run generateHostKeys.sh
 1. Run updateKeys.sh
 1. kubectl create -f k8s/ssh.yaml
 1. kubectl create -f k8s/ssh-service.yaml
