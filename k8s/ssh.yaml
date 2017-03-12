@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: ssh
-  namespace: ssh
+  namespace: default
 spec:
   replicas: 1
   template:
@@ -29,15 +29,21 @@ spec:
         volumeMounts:
         - mountPath: /root/.ssh/
           name: ssh-dir
+        - mountPath: /etc/ssh/
+          name: ssh-host-keys
         resources:
           limits:
-            cpu: 1
+            cpu: 50m
             memory: 30Mi
           requests:
-            cpu: 50m
+            cpu: 10m
             memory: 20Mi
       volumes:
       - name: ssh-dir
         secret:
           secretName: ssh-keys
+          defaultMode: 0600
+      - name: ssh-host-keys
+        secret:
+          secretName: ssh-host-keys
           defaultMode: 0600
