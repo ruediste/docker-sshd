@@ -1,5 +1,5 @@
 # SSH Server for Kubernetes
-Use SSH to connect to your kubernetes cluster.
+Use SSH to connect to your kubernetes cluster. See [blog post](http://ruediste.github.io/cloud/2017/03/13/connect-google-cloud-ssh.html) for details.
 
 ## Usage
 
